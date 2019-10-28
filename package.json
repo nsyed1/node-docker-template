@@ -1,0 +1,19 @@
+{
+  "name": "node-docker-test",
+  "version": "1.0.0",
+  "description": "dockerizing a node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_local": "node -r dotenv/config server.js",
+    "start": "node server.js"
+  },
+  "author": "Noor Syed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

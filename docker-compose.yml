@@ -1,0 +1,23 @@
+version: '3'
+services:
+  node:
+    # uses image built from ./Dockerfile
+    build: .
+    ports: 
+      # - "9001:9001"
+      - "${PORT}:${PORT}"
+    volumes:
+      # mount current dir to /app inside container
+      # allowing you to modify the code on the fly
+      # without having to rebuild the image
+      - .:/app
+      - /app/node_modules # node_modules don't get lost
+    env_file:
+      - .env
+    # environment:
+    #   NODE_ENV: development
+    #   PORT: 9001
+
+  # example for other services 
+  # redis:
+    # image: "redis:alpine"
