@@ -6,10 +6,6 @@ basic setup for starting node apps to be deployed with docker
 - `docker-compose up` to run with docker
 - `npm run start_local` to run on local env
 
-## run commands
-- `docker-compose up` to run with docker
-- `npm run start_local` to run on local env
-
 # notes
 
 ## this project is to
